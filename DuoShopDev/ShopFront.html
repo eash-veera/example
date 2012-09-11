@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DuoShopFront</title>
+        <meta charset=utf-8>
+        <meta name="description" content="DuoSubscribe FB shop application" />
+        <meta name="keywords" content="Subscriber managment,Applications,Sales,FaceBook,Store Front"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/orbit-1.3.0.css"/>
+        <link  href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.freetile.js"></script>
+        <script type="text/javascript" src="js/init.js"></script>
+        <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    </head>
+    <body>
+        <div id="fb_shopFrontHeader">
+            <div id="shopName" class="fl">DuoSubscribe Shop Front</div>
+            <div id="userDetails" class="fl"></div>
+        </div>
+        <div id="fb_productSlideShow">
+                <div id="slide1" class="prodSlide"><img src="img/ratePlanslide.png" width="700" height="250" alt="featuredProduct"/></div>
+                <div id="slide1" class="prodSlide"><img src="img/receiptSlide.png" width="700" height="250" alt="featuredProduct"/></div>
+                <div id="slide1" class="prodSlide"><img src="img/promotionMasterSlide.png" width="700" height="250" alt="featuredProduct"/></div>            
+        </div>
+        <div id="fb_productFilter">
+            <div id="filter1" class="holder">
+                <ul>
+                    <li>Your Apps</li>
+                    <li>Home</li>
+                    <li>Popular</li>
+                </ul>
+            </div>
+            <div id="filter2" class="holder">
+                <ul>
+                    <li>Trending</li>
+                    <li>Collection</li>
+                </ul>
+            </div>
+            <div id="filter3" class="holder">
+                <div id="sortProdHolder">
+                    <div id="sortCat" class="sortProd"><img src="img/icons/icon_category.png" alt="products by category"></div>
+                    <div id="sortDate" class="sortProd"><img src="img/icons/icon_date.png" alt="products by date"></div>
+                    <div id="sortShuffle" class="sortProd"><img src="img/icons/icon_shuffle.png" alt="products shuffle"></div>
+                </div>
+            </div>
+        </div>
+        <div id="fb_products">
+        </div>
+        <div id="fb_productsMenuBody">
+            <div class="first"></div>
+        </div>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#fb_productSlideShow').orbit({bullets:false});
+            });
+        </script>
+    </body>
+</html>
